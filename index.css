@@ -284,473 +284,54 @@ html {
     z-index: 0;
 }
 
-
-
-
-
-.skill-container {
-    margin-top: 2rem;
+.skills {
+    margin-top: 4rem;
+  background-color: #111;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
 }
 
 .skill-container h1 {
-    color: white;
-    padding-top: 3rem;
-    text-align: center;
-
+  font-size: 1.7rem;
+  margin-bottom: 40px;
 }
 
-.tech-skill h2 {
-    margin-bottom: 2rem;
-
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.tech-skill {
-    width: 20%;
+.skill-box {
+  background-color: #1e1e1e;
+  border: 1px solid #2c2c2c;
+  border-radius: 10px;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.tech-skill .bars {
-    color: white;
-    margin: 40px 0;
+.skill-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px aqua;
 }
 
-.tech-skill h2 {
-    color: white;
-    text-align: center;
-
-
+.skill-box i {
+  font-size: 2rem;
+  color: aqua;
+  margin-bottom: 10px;
 }
 
-
-.progress {
-    width: 100%;
-    height: 6px;
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
+.skill-box span {
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
-.progress-bars {
-    height: 100%;
-    background-color: aqua;
-    border-radius: 10px;
-    transform: width 0.5s ease-in-out;
-    animation: progress-bars 2s ease-in-out;
-}
-
-
-
-@keyframes progress-bars {
-    0% {
-        width: 0;
-    }
-
-    100% {
-        width: 90%;
-    }
-}
-
-.progress-2 {
-    width: 100%;
-    height: 6px;
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.progress-bars-2 {
-    height: 100%;
-    background-color: aqua;
-    border-radius: 10px;
-    transform: width 0.5s ease-in-out;
-    animation: progress-bars-2 2s ease-in-out;
-}
-
-
-@keyframes progress-bars-2 {
-    0% {
-        width: 0;
-    }
-
-    100% {
-        width: 85%;
-    }
-}
-
-.progress-3 {
-    width: 100%;
-    height: 6px;
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.progress-bars-3 {
-    height: 100%;
-    background-color: aqua;
-    border-radius: 10px;
-    transform: width 0.5s ease-in-out;
-    animation: progress-bars-3 2s ease-in-out;
-}
-
-
-@keyframes progress-bars-3 {
-    0% {
-        width: 0;
-    }
-
-    100% {
-        width: 65%;
-    }
-}
-
-.progress-4 {
-    width: 100%;
-    height: 6px;
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-
-
-.progress-bars-4 {
-    height: 100%;
-    background-color: aqua;
-    border-radius: 10px;
-    transform: width 0.5s ease-in-out;
-    animation: progress-bars-4 2s ease-in-out;
-}
-
-.percent {
-    position: absolute;
-    margin-top: -22px;
-    margin-left: 185px;
-    font-size: 14px;
-    font-weight: bold;
-    color: white;
-}
-
-@keyframes progress-bars-4 {
-    0% {
-        width: 0;
-    }
-
-    100% {
-        width: 95%;
-    }
-}
-
-.progress-5 {
-    width: 100%;
-    height: 6px;
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-
-
-.progress-bars-5 {
-    height: 100%;
-    background-color: aqua;
-    border-radius: 10px;
-    transform: width 0.5s ease-in-out;
-    animation: progress-bars-5 2s ease-in-out;
-}
-
-
-@keyframes progress-bars-5 {
-    0% {
-        width: 0;
-    }
-
-    100% {
-        width: 50%;
-    }
-}
-
-.progress-6 {
-    width: 100%;
-    height: 6px;
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-
-
-.progress-bars-6 {
-    height: 100%;
-    background-color: aqua;
-    border-radius: 10px;
-    transform: width 0.5s ease-in-out;
-    animation: progress-bars-6 2s ease-in-out;
-}
-
-
-@keyframes progress-bars-6 {
-    0% {
-        width: 0;
-    }
-
-    100% {
-        width: 50%;
-    }
-}
-
-
-.progress-7 {
-    width: 100%;
-    height: 6px;
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-
-
-.progress-bars-7 {
-    height: 100%;
-    background-color: aqua;
-    border-radius: 10px;
-    transform: width 0.5s ease-in-out;
-    animation: progress-bars-7 2s ease-in-out;
-}
-
-
-@keyframes progress-bars-7 {
-    0% {
-        width: 0;
-    }
-
-    100% {
-        width: 40%;
-    }
-}
-
-
-.progress-8 {
-    width: 100%;
-    height: 6px;
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-
-
-.progress-bars-8 {
-    height: 100%;
-    background-color: aqua;
-    border-radius: 10px;
-    transform: width 0.5s ease-in-out;
-    animation: progress-bars-8 2s ease-in-out;
-}
-
-
-@keyframes progress-bars-8 {
-    0% {
-        width: 0;
-    }
-
-    100% {
-        width: 75%;
-    }
-}
-
-
-.heading h2 {
-    color: white;
-}
-
-.circle-wrap {
-    margin-top: 1.5rem;
-
-    width: 90px;
-    height: 90px;
-    background-color: white;
-    border-radius: 50%;
-}
-
-.circle-wrap .circle .mask,
-.circle-wrap .circle .fill-1,
-.circle-wrap .circle .fill-2,
-.circle-wrap .circle .fill-3,
-.circle-wrap .circle .fill-4 {
-    width: 90px;
-    height: 90px;
-
-    position: absolute;
-    border-radius: 50%;
-
-}
-
-.circle-wrap .circle .mask {
-    clip: rect(0px, 90px, 90px, 45px);
-
-
-
-}
-
-.circle {
-    width: 90px;
-    height: 90px;
-}
-
-.mask .fill-1 {
-    clip: rect(0px, 45px, 90px, 0px);
-    background-color: aqua;
-}
-
-.mask.full-1,
-.circle .fill-1 {
-    animation: fill-1 ease-in-out 3s;
-    transform: rotate(135deg);
-
-
-}
-
-@keyframes fill-1 {
-    0% {
-        transform: rotate(0deg);
-
-    }
-
-    100% {
-        transform: rotate(135deg);
-    }
-}
-
-
-.skills {
-    border-radius: 10px;
-    background-color: #0f0f0f;
-    margin-top: 4rem;
-}
-
-.mask .fill-2 {
-    clip: rect(0px, 45px, 90px, 0px);
-    background-color: aqua;
-}
-
-.mask.full-2,
-.circle .fill-2 {
-    animation: fill-2 ease-in-out 3s;
-    transform: rotate(160deg);
-
-
-}
-
-@keyframes fill-2 {
-    0% {
-        transform: rotate(0deg);
-
-    }
-
-    100% {
-        transform: rotate(160deg);
-    }
-}
-
-.mask .fill-3 {
-    clip: rect(0px, 45px, 90px, 0px);
-    background-color: aqua;
-}
-
-.mask.full-3,
-.circle .fill-3 {
-    animation: fill-3 ease-in-out 3s;
-    transform: rotate(135deg);
-
-
-}
-
-@keyframes fill-3 {
-    0% {
-        transform: rotate(0deg);
-
-    }
-
-    100% {
-        transform: rotate(135deg);
-    }
-}
-
-.mask .fill-4 {
-    clip: rect(0px, 45px, 90px, 0px);
-    background-color: aqua;
-}
-
-.mask.full-4,
-.circle .fill-4 {
-    animation: fill-4 ease-in-out 3s;
-    transform: rotate(105deg);
-
-
-}
-
-@keyframes fill-4 {
-    0% {
-        transform: rotate(0deg);
-
-    }
-
-    100% {
-        transform: rotate(105deg);
-    }
-}
-
-.inside-circle {
-    width: 65px;
-    height: 65px;
-    border-radius: 50%;
-    color: whitesmoke;
-    background: black;
-    line-height: 64px;
-    position: absolute;
-    margin-top: 13px;
-    margin-left: 13px;
-
-    z-index: 100;
-    text-align: center;
-    font-size: 1.3rem;
-    font-weight: 00;
-}
-
-.skill-flex {
-    display: flex;
-    justify-content: center;
-    gap: 10rem;
-    margin-top: 4rem;
-}
-
-.first-flex {
-    display: flex;
-    gap: 2rem;
-    margin-bottom: 2rem;
-}
-
-.second-flex {
-    display: flex;
-    gap: 4rem;
-}
-
-.text-circle h2 {
-    color: white;
-    font-size: 18px;
-
-    font-weight: 300;
-    text-indent: 0.1rem;
-    padding-top: 5px;
-}
-
-.text-circle1 h2 {
-    color: white;
-    font-size: 14px;
-
-    font-weight: 300;
-    padding-top: 5px;
-}
 
 /* Container styling */
 .services {
@@ -873,6 +454,50 @@ html {
 .image-text a:hover {
     color: #00ffff;
 }
+
+.project-description {
+  padding: 15px;
+  text-align: left;
+}
+
+.project-description p {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.project-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 14px;
+  background-color: aqua;
+  color: #000;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #00ffff;
+}
+
+.btn-alt {
+  background-color: #333;
+  color: #fff;
+}
+
+.btn-alt:hover {
+  background-color: #555;
+}
+
 
 
 
