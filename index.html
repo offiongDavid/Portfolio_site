@@ -15,6 +15,8 @@
 </head>
 
 <body>
+
+
     <div class="site-container">
 
         <div class="nav-container">
@@ -39,6 +41,17 @@
         </div>
 
 
+        <div id="welcomePopup" class="popup-overlay">
+            <div class="popup-content">
+                <h2>👋 Welcome!</h2>
+                <p>Hi, I'm <span style="color:aqua;">David Offiong</span> — a passionate web developer and designer.</p>
+                <p>Explore my portfolio and see what I can build for you!</p>
+                <button id="closePopup">Let's Go 🚀</button>
+            </div>
+        </div>
+
+
+
 
         <main class="wholeSection">
             <!-- Home-section -->
@@ -46,12 +59,13 @@
                 <div class="home-container">
 
                     <div class="image-container">
-                        <img src="/PortImages/img2.jpg" class="portfolio-pic" width="200px" height="200px">
+                        <img src="/PortImages/WhatsApp Image 2025-10-07 at 8.25.27 PM.jpeg" class="portfolio-pic"
+                            width="300px" height="300px">
                     </div>
 
 
                     <div class="text-link-container">
-                        <h1>It's <span style="color: aqua;">David</span></h1>
+                        <h1>I am <span style="color: aqua;">David</span></h1>
                         <h3>I'm a <span style="color: aqua;" id="element"></span></h3>
                     </div>
 
@@ -86,7 +100,7 @@
 
                     <div class="btn-link">
                         <a href="#contact" class="Active-link">Hire Me</a>
-                        <a href="https://drive.google.com/file/d/1WBJEQ5GdqKSPysaXUOX7K125psnDq0nh/view?usp=sharing"
+                        <a href="https://drive.google.com/file/d/1HA959GSLt4OtdV3oXyg5ZZUsSWAHNV7y/view?usp=sharing"
                             class="cv-link">Download CV <i class="ri-download-line"></i></a>
 
                     </div>
@@ -95,41 +109,52 @@
 
 
             <!-- About ma section -->
-            <section class="about" id="About">
-                <div class="flex-container">
-                    <div class="about-me-container">
-                        <div class="about-me">
-                            <h1>About <span style="color: aqua;">Me</span></h1>
+            <section class="about" id="about">
+                <div class="about-container">
+                    <div class="about-text">
+                        <h1>About <span>Me</span></h1>
+                        <p class="intro">
+                            Hi, I'm <span>David Offiong</span> : a passionate web designer and developer with a deep
+                            interest in
+                            creating beautiful, functional, and user-centered digital experiences. I love bringing ideas
+                            to life
+                            through clean code and creative design.
+                        </p>
 
-                            <span class="abt-me-text"
-                                style="color: aqua; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; margin-top: 1.5rem;"
-                                id="Element-2"></span>
-                        </div>
-                        <div class="about-writeup">
-                            <p class="text-2">
-                                David, a web designer with a passion for creating digital experiences that inspire
-                                and
-                                engage. With
-                                a
-                                background in computer science, I've developed a unique blend of technical skills
-                                and
-                                creative
-                                vision
-                                that helps me craft websites that truly stand out.
+                        <p class="details">
+                            As graduate of <strong>Computer Science at Caleb University</strong>, I've gained a
+                            solid understanding
+                            of both the technical and creative sides of web development. My focus lies in building
+                            responsive websites,
+                            optimizing user interfaces, and ensuring a seamless experience across all devices.
+                        </p>
 
-                            </p>
+                        <p class="details">
+                            Whether it’s developing a portfolio, a small business site, or crafting an AI-based
+                            platform, I enjoy working
+                            on projects that challenge me to think outside the box and continuously grow my skills.
+                        </p>
 
-                        </div>
-                        <div class="btn-read-more">
-                            <a href="##" class="cv-link">Read More</a>
+                        <p class="details">
+                            Beyond coding, I’m passionate about innovation, problem-solving, and learning emerging web
+                            technologies
+                            that make online experiences more meaningful.
+                        </p>
+
+                        <div class="personal-info">
+                            <p><strong>Location:</strong> Lagos, Nigeria</p>
+                            <p><strong>Email:</strong> offiongd400@gmail.com</p>
+                            <p><strong>Focus Areas:</strong> Web Design, Front-End Development, and Creative
+                                Branding</p>
                         </div>
                     </div>
 
                     <div class="about-image">
-                        <img src="PortImages/pic.jpg" class="portfolioPic" width="250px" height="250px">
+                        <img src="PortImages/pic.jpg" alt="David Offiong" class="profile-pic">
                     </div>
                 </div>
             </section>
+
 
 
 
@@ -195,174 +220,363 @@
                 </div>
             </section>
 
-            <!-- Services -->
-            <section class="services" id="services">
-                <div class="service-container">
-                    <h1>My <span style="color: aqua;">Services</span></h1>
 
-                    <div class="service-flex-container">
-                        <div class="service-flex-item">
-                            <div class="img1">
-                                <img src="PortImages/icons8-web-design-50.png" alt="">
-                            </div>
-                            <h2>Web Design</h2>
+            <section id="services" class="services-section">
+                <h2 class="section-title">My Services & Plans</h2>
+                <p class="section-subtitle">Choose a plan that best fits your project goals</p>
 
-                            <p> Web designer with a passion for crafting unique digital experiences. Skilled in creating
-                                responsive, user-friendly websites that drive results. </p>
+                <div class="services-container">
+
+                    <!-- Basic Plan -->
+                    <div class="service-card">
+                        <h4 class="plan-title">Basic Website</h4>
+                        <h2 class="plan-price">₦100,000</h2>
+                        <p class="plan-desc">Perfect for personal portfolios and small projects.</p>
+                        <ul class="plan-features">
+                            <li>✔ 1–3 Pages</li>
+                            <li>✔ Responsive Design</li>
+                            <li>✔ Contact Form</li>
+                            <li>✖ Domain & Hosting</li>
+                        </ul>
+                        <a href="#contact" class="btn-plan">Choose Plan</a>
+                    </div>
+
+                    <!-- Standard Plan -->
+                    <div class="service-card">
+                        <h4 class="plan-title">Standard Business Site</h4>
+                        <h2 class="plan-price">₦250,000+</h2>
+                        <p class="plan-desc">For startups and small businesses needing a strong web presence.</p>
+                        <ul class="plan-features">
+                            <li>✔ 4–6 Pages</li>
+                            <li>✔ SEO Optimization</li>
+                            <li>✔ Basic Admin Dashboard</li>
+                            <li>✔ 1-Month Free Support</li>
+                        </ul>
+                        <a href="#contact" class="btn-plan">Choose Plan</a>
+                    </div>
+
+                    <!-- Premium Plan -->
+                    <div class="service-card">
+                        <h4 class="plan-title">Premium Web App</h4>
+                        <h2 class="plan-price">₦450,000+</h2>
+                        <p class="plan-desc">For advanced websites or full web applications.</p>
+                        <ul class="plan-features">
+                            <li>✔ 7+ Pages</li>
+                            <li>✔ Login System</li>
+                            <li>✔ Payment Integration</li>
+                            <li>✔ Admin Dashboard + Analytics</li>
+                        </ul>
+                        <a href="#contact" class="btn-plan">Choose Plan</a>
+                    </div>
+
+                </div>
+            </section>
 
 
-                        </div>
+            <section id="experience" class="experience-section">
+                <h2 class="section-title">My Experience</h2>
 
-                        <div class="service-flex-item">
-                            <div class="img1">
-                                <img src="PortImages/icons8-graphic-design-64 (1).png" alt="">
-                            </div>
-                            <h2>Graphic Design</h2>
+                <div class="timeline">
 
-                            <p> Visual storyteller and graphic designer with a passion for creating bold, eye-catching
-                                designs.
-                                Skilled in crafting logos, icons, and graphics.</p>
-
-
-                        </div>
-
-                        <div class="service-flex-item">
-                            <div class="img1">
-                                <img src="PortImages/icons8-web-development-64.png" alt="">
-                            </div>
-                            <h2>Web Development</h2>
-
-                            <p> web developer with a passion for building fast, scalable, and secure websites. Skilled
-                                in
-                                crafting custom solutions using technologies like HTML, CSS, JavaScript, React,
-                                Node.js,php.
+                    <!-- Experience 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Frontend Developer Intern <span>@ GlobalTech</span></h4>
+                            <p class="timeline-date">May 2024 - October 2024</p>
+                            <p>Worked on responsive web interfaces using HTML, CSS, and JavaScript. Collaborated with
+                                backend teams to improve performance and UX.
                             </p>
 
+                            <p>Also Utilized the oppurtunity to train over <span style="color: aqua;">50+</span> student
+                                at the organization on web development</p>
+                        </div>
+                    </div>
 
+                    <!-- Experience 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Freelance Web Developer</h4>
+                            <p class="timeline-date">2023 - Present</p>
+                            <p>Designed and built websites for personal brands and small businesses, ensuring mobile
+                                responsiveness and SEO optimization.</p>
+                        </div>
+                    </div>
+
+                    <!-- Experience 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>B.Sc. Computer Science <span>@ Caleb University</span></h4>
+                            <p class="timeline-date">2021 - 2025</p>
+                            <p>Gained solid foundations in software engineering, AI, and web development through
+                                academic projects and research.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <section class="blog" id="blog">
+                <h2 class="section-title">Latest <span>Articles</span></h2>
+                <div class="blog-container">
+                    <div class="blog-card">
+                        <img src="https://media.istockphoto.com/id/2206649631/photo/modern-gift-phone-concept.webp?a=1&b=1&s=612x612&w=0&k=20&c=q6Afb39ORb490U6lptA9JHMQMU0UNeBzGo36HvGI8yk="
+                            alt="Clean Web Design">
+                        <h3>5 Tips for Clean Web Design</h3>
+                        <p>Learn the essentials of minimal and clean web design that attracts users and improves
+                            engagement.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+
+                    <div class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=800&h=500&q=80"
+                            alt="Color Palette">
+                        <h3>How to Choose the Right Color Palette</h3>
+                        <p>Explore how colors affect user experience and how to build a palette that represents your
+                            brand perfectly.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+
+                    <div class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&h=500&q=80"
+                            alt="Responsive Design">
+                        <h3>Responsive Design: Why It Matters</h3>
+                        <p>Discover why responsive design is essential in modern web development and how to master it
+                            easily.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+            <!-- Project Section -->
+            <section class="project" id="project">
+                <div class="container-project">
+                    <h1>My <span style="color: aqua;">Projects</span></h1>
+
+                    <div class="projects-grid">
+
+                        <div class="project-item">
+                            <img src="PortImages/project6.png" alt="Plagiarism Website">
+                            <div class="image-text">
+                                <p>AI Plagiarism Platform for Caleb University</p>
+                            </div>
+                            <div class="project-description">
+                                <p>An AI-powered tool to detect plagiarism using NLP </p>
+                                <div class="project-buttons">
+                                    <a href="https://github.com/offiongDavid/plagiarismSite" class="btn">Source Code</a>
+                                    <a href="#" class="btn btn-alt">View Site</a>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="service-flex-item">
-                            <div class="img1">
-                                <img src="PortImages/icons8-responsive-50.png" alt="">
+                        <div class="project-item">
+                            <img src="PortImages/Screenshot 2025-1.png" alt="Voting Platform">
+                            <div class="image-text">
+                                <p>Voting Platform</p>
                             </div>
-                            <h2>Responsive Design</h2>
+                            <div class="project-description">
+                                <p>A web-based election platform for secure student voting with live result tracking.
+                                </p>
+                                <div class="project-buttons">
+                                    <a href="https://github.com/offiongDavid/Voting-platform" class="btn">Source
+                                        Code</a>
+                                    <a href="#" class="btn btn-alt">View Site</a>
+                                </div>
+                            </div>
+                        </div>
 
-                            <p> Responsive design expert crafting seamless user experiences across devices and screens.
-                            </p>
+                        <div class="project-item">
+                            <img src="PortImages/Screenshot 2025-2.png" alt="Quiz Platform">
+                            <div class="image-text">
+                                <p>Quiz Platform</p>
+                            </div>
+                            <div class="project-description">
+                                <p>A classroom quiz app with timed quizzes, score display, and question banks.</p>
+                                <div class="project-buttons">
+                                    <a href="https://github.com/offiongDavid/QuizPlatform" class="btn">Source Code</a>
+                                    <a href="#" class="btn btn-alt">View Site</a>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="project-item">
+                            <img src="/PortImages/matoelevators .png" alt="Quiz Platform">
+                            <div class="image-text">
+                                <p>MATO Elevators</p>
+                            </div>
+                            <div class="project-description">
+                                <p>A modern and professional website designed for an Elevator Company, showcasing their
+                                    services, products, and maintenance solutions.
+                                    Built with a sleek, responsive layout that highlights reliability and innovation.
+                                    The design emphasizes smooth navigation and strong visual appeal to reflect the
+                                    company’s excellence.
+                                    Perfect for attracting clients and establishing a trustworthy online presence.</p>
+                                <div class="project-buttons">
+                                    <a href="https://github.com/offiongDavid/MATO-Elevators" class="btn">Source Code</a>
+                                    <a href="https://mato-elevators-herw.vercel.app/" class="btn btn-alt">View Site</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="testimonials" id="testimonials">
+                <h2 class="section-title">What <span>Clients Say</span></h2>
+                <div class="testimonials-container">
+                    <div class="testimonial">
+                        <p>"Working with you was amazing! The website was clean, responsive, and delivered ahead of
+                            schedule."</p>
+                        <h4>- Sarah Johnson</h4>
+                        <span>Business Owner</span>
+                    </div>
+
+                    <div class="testimonial">
+                        <p>"You transformed my ideas into a beautiful portfolio website that perfectly represents my
+                            brand."</p>
+                        <h4>- Daniel Lee</h4>
+                        <span>Creative Designer</span>
+                    </div>
+
+                    <div class="testimonial">
+                        <p>"Excellent communication and attention to detail. I’d definitely recommend your services!"
+                        </p>
+                        <h4>- Maria Perez</h4>
+                        <span>Entrepreneur</span>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="faq" id="faq">
+                <h2 class="section-title">Frequently <span>Asked Questions</span></h2>
+
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question">What kind of websites do you design? <span>+</span></button>
+                        <div class="faq-answer">
+                            <p>I create responsive and modern websites — from portfolios and business sites to small
+                                e-commerce platforms.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">How long does a project take? <span>+</span></button>
+                        <div class="faq-answer">
+                            <p>It depends on the project’s size, but most designs take between 1 to 3 weeks, including
+                                revisions.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">Do you handle domain and hosting setup? <span>+</span></button>
+                        <div class="faq-answer">
+                            <p>Yes! I can help you set up domain and hosting services so your site is live and ready for
+                                visitors.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">Can you redesign an existing website? <span>+</span></button>
+                        <div class="faq-answer">
+                            <p>Absolutely. I can refresh your old website, improve its responsiveness, and optimize it
+                                for better performance.</p>
                         </div>
                     </div>
                 </div>
             </section>
 
 
-            <!-- Project Section -->
-          <section class="project" id="project">
-  <div class="container-project">
-    <h1>My <span style="color: aqua;">Projects</span></h1>
-
-    <div class="projects-grid">
-
-      <div class="project-item">
-        <img src="PortImages/project6.png" alt="Plagiarism Website">
-        <div class="image-text">
-          <p>AI Plagiarism Platform for Caleb University</p>
-        </div>
-        <div class="project-description">
-          <p>An AI-powered tool to detect plagiarism using NLP </p>
-          <div class="project-buttons">
-            <a href="https://github.com/offiongDavid/plagiarismSite" class="btn">Source Code</a>
-            <a href="#" class="btn btn-alt">View Site</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-item">
-        <img src="PortImages/Screenshot 2025-1.png" alt="Voting Platform">
-        <div class="image-text">
-          <p>Voting Platform</p>
-        </div>
-        <div class="project-description">
-          <p>A web-based election platform for secure student voting with live result tracking.</p>
-          <div class="project-buttons">
-            <a href="https://github.com/offiongDavid/Voting-platform" class="btn">Source Code</a>
-            <a href="#" class="btn btn-alt">View Site</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-item">
-        <img src="PortImages/Screenshot 2025-2.png" alt="Quiz Platform">
-        <div class="image-text">
-          <p>Quiz Platform</p>
-        </div>
-        <div class="project-description">
-          <p>A classroom quiz app with timed quizzes, score display, and question banks.</p>
-          <div class="project-buttons">
-            <a href="https://github.com/offiongDavid/QuizPlatform" class="btn">Source Code</a>
-            <a href="#" class="btn btn-alt">View Site</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
 
 
             <section class="contact" id="contact">
-                <h1>Contact <span style="color: aqua;">Me</span></h1>
+                <h1>Contact <span>Me</span></h1>
+                <p class="contact-intro">
+                    Have a project in mind or need a website that stands out? Fill in the form below and let’s build
+                    something amazing together.
+                </p>
+
                 <div class="contact-container">
                     <form action="https://formspree.io/f/xovwrdle" method="POST">
+
                         <div class="input-group">
-                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="text" name="name" placeholder="Your Full Name" required>
                         </div>
+
                         <div class="input-group">
-                            <input type="email" name="email" placeholder="Your Email" required>
+                            <input type="email" name="email" placeholder="Your Email Address" required>
                         </div>
+
+                        <div class="input-group">
+                            <select name="website-type" required>
+                                <option value="" disabled selected>Type of Website You Want</option>
+                                <option value="portfolio">Portfolio Website</option>
+                                <option value="business">Business / Corporate Website</option>
+                                <option value="ecommerce">E-commerce Website</option>
+                                <option value="church">Church / Non-Profit Website</option>
+                                <option value="school">School / Educational Website</option>
+                                <option value="custom">Custom Project</option>
+                            </select>
+                        </div>
+
                         <div class="input-group">
                             <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
                         </div>
+
                         <button type="submit" class="contact-btn">Send Message</button>
                     </form>
                 </div>
             </section>
 
 
+            <button id="scrollTopBtn" title="Go to top">↑</button>
 
-            <section class="ending" id="footer">
+
+            <section class="footer" id="footer">
                 <div class="footer-container">
-                    <div class="icons" style="color: whitesmoke;">
-                        <a href="http://web.facebook.com/profile.php?id=100085913710155" target=""
-                            rel="noopener noreferrer"> <i class="ri-facebook-line"></i>
+
+                    <div class="social-icons">
+                        <a href="http://web.facebook.com/profile.php?id=100085913710155" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="ri-facebook-line"></i>
                         </a>
-                        <a href="https://x.com/@DavidOffiong11" target="" rel="noopener noreferrer">
+                        <a href="https://x.com/@DavidOffiong11" target="_blank" rel="noopener noreferrer">
                             <i class="ri-twitter-x-line"></i>
                         </a>
-
-                        <a href="https://github.com/offiongDavid" target="" rel="noopener noreferrer">
+                        <a href="https://github.com/offiongDavid" target="_blank" rel="noopener noreferrer">
                             <i class="ri-github-line"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/drex-dev-6b9487372/" target="" rel="noopener noreferrer"><i
-                                class="ri-linkedin-line"></i></a>
-
+                        <a href="https://www.linkedin.com/in/drex-dev-6b9487372/" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="ri-linkedin-line"></i>
+                        </a>
                     </div>
 
-
-                    <div class="links">
+                    <div class="footer-links">
                         <a href="#services">Services</a>
-                        <a href="#About">About me</a>
+                        <a href="#About">About Me</a>
+                        <a href="#project">Projects</a>
                         <a href="#contact">Contact</a>
-                        <a href="#project">Project</a>
                     </div>
 
-                    <div class="copywright">
-                        <h4>@Offiong David|Portfolio</h4>
+                    <div class="footer-bottom">
+                        <p>© 2025 <span>Offiong David</span> | Designed & Built with Passion 💻</p>
                     </div>
                 </div>
-
             </section>
+
+
+
         </main>
     </div>
 
